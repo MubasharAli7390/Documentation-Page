@@ -1,75 +1,63 @@
-html, body, nav {
-    min-width: 290px;
-    color: #4d4e53;
-    background-color: #ffffff;
-    font-family: 'Open Sans', Arial, sans-serif;
-    Line-height: 1.5;
-  }
-  
-  #navbar {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 50px;
+    padding-top: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.Example {
+    display: inline;
+    margin-right: 70px;
+}
+
+code {
+    background-color: lightgray;
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#navbar header {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+#navbar {
     position: fixed;
-    min-width: 290px;
     top: 0px;
     left: 0px;
-    width: 300px;
     height: 100%;
-    border-right: solid;
-    border-color: rgb(0, 22, 22, 0.4);
-    box-sizing: border-box;
+    width: 150px;
     display: block;
-  
-  
-  
-  }
+    background-color: wheat;
+    border-color: #000;
+    border-right: solid;    
+}
 
-  .nav-link {
-    color:  #4d4e53;
-    text-decoration: none;
-    font-size: 1.5rem;
-   
-    
-  }
-  
-  #navbar li {
-    list-style: none;
-    border-top: 1px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  
-    
-    width: 100%;
-  }
-  
-  header {
-    color: black;
-    margin: 10px;
-    text-align: center;
-    font-size: 1.8em
-  }
-  
-  main {
-    position: absolute;
-    margin-left: 310px;
-    padding: 20px;
-  }
+#navbar ul li {
+    padding-top: 20px; 
+    border-top: solid;
+    padding-bottom: 10px; 
+}
 
-  #navbar a {
-    display: block;
-    padding: 10px 30px;
-    color: #4d4e53;
+a {
     text-decoration: none;
-  
-  }
-  
-  
-  @media only screen and (max-width: 900px) {
-    #navbar {
-     display: none;
-    }
-    main {
-  
-      margin-left: 0px;
-  
-      
-    }
-  }
+    color: #000;
+}
+
+#main-doc {
+    margin-left: 150px;
+}
+
