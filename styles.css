@@ -39,7 +39,7 @@ code {
     top: 0px;
     left: 0px;
     height: 100%;
-    width: 150px;
+    width: 215px;
     display: block;
     background-color: wheat;
     border-color: #000;
@@ -48,9 +48,9 @@ code {
 
 #navbar ul li {
     padding-top: 20px; 
-    border-top: solid;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
+
 
 a {
     text-decoration: none;
@@ -58,6 +58,18 @@ a {
 }
 
 #main-doc {
-    margin-left: 150px;
+    margin-left: 215px;
+}
+
+@media (max-width: 720px) {
+    #navbar {
+       display: none;
+}
+
+#main-doc {
+    margin-left: 0;
+}
+
+
 }
 
